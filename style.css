@@ -111,7 +111,7 @@ nav a:not(.btn-primary):hover {
     color: var(--primary);
 }
 
-/* Buttons */
+
 .btn-primary {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--white) !important;
@@ -150,7 +150,6 @@ nav a:not(.btn-primary):hover {
     filter: brightness(0.95);
 }
 
-/* Page Hero */
 .page-hero {
     padding: 10rem 2rem 5rem;
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
@@ -197,7 +196,7 @@ nav a:not(.btn-primary):hover {
     justify-content: center;
     position: relative;
     padding: 6rem 2rem 2rem;
-    background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.85)), url('file:///C:/Users/Joshua/.gemini/antigravity/brain/66e5b6cf-9556-49b2-91f2-da88c25bc179/hero_bg_1777098120230.png');
+    background-image: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.85));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
