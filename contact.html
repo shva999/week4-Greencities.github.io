@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenCities - Contact the Team.">
+    <title>GreenCities | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .team-card {
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-bottom: 4px solid var(--primary);
+        }
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid var(--primary-light);
+        }
+        .team-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+        .team-card p.role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .team-card p.intro {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            flex: 1;
+        }
+        .team-card a.email {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            background: var(--bg-main);
+            border-radius: 50px;
+            transition: var(--transition);
+            font-size: 0.875rem;
+        }
+        .team-card a.email:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .contact-form-section {
+            background-color: var(--primary-light);
+            padding: 6rem 2rem;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow-soft);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 12px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="glass-header">
+        <div class="header-container">
+            <div class="logo-space">
+                <img src="images/GreenCitiesLogo.png" alt="GreenCities Logo" class="logo">
+                <span class="logo-text">GreenCities</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html" class="btn-primary">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background: linear-gradient(135deg, #2C3E50 0%, var(--primary-dark) 100%);">
+            <h1>Meet the Team</h1>
+            <p>Get in touch with the passionate individuals driving the GreenCities initiative forward.</p>
+        </section>
+
+        <section class="features">
+            <div class="section-header">
+                <h2>Our Core Members</h2>
+                <p>We are a dedicated team of sustainability advocates, tech enthusiasts, and community builders.</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <img src="https://placehold.co/120x120/2ecc71/ffffff?text=JE" alt="Jude Espiritu" class="team-avatar">
+                    <h3>Espiritu, Jude Gabriel S.</h3>
+                    <p class="role">Outreach Coordinator</p>
+                    <p class="intro">Passionate about urban ecology and community building. Jude leads our outreach programs and educational workshops.</p>
+                    <a href="mailto:jude.espiritu@greencities.ph" class="email">jude.espiritu@greencities.ph</a>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <img src="images/joshuamapagu.png" alt="Joshua Mapagu" class="team-avatar">
+                    <h3>Mapagu, Joshua Eldrick D.</h3>
+                    <p class="role">Technical Director</p>
+                    <p class="intro">The technical architect behind the GreenCities platform. Joshua is dedicated to building scalable, sustainable tech solutions.</p>
+                    <a href="mailto:joshua.mapagu@greencities.ph" class="email">joshua.mapagu@greencities.ph</a>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <img src="https://placehold.co/120x120/1abc9c/ffffff?text=JP" alt="John Lenard Paca" class="team-avatar">
+                    <h3>Paca, John Lenard P.</h3>
+                    <p class="role">Botany Specialist</p>
+                    <p class="intro">An expert in native Philippine botany. John curates our plant care guides and local greening strategies.</p>
+                    <a href="mailto:john.paca@greencities.ph" class="email">john.paca@greencities.ph</a>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <img src="images/gabvillanueva.jpg" alt="Luis Villanueva" class="team-avatar">
+                    <h3>Villanueva, Luis Gabriel D.</h3>
+                    <p class="role">Partnerships Manager</p>
+                    <p class="intro">Drives our partnerships with local LGUs and oversees the volunteer event coordination across the metro.</p>
+                    <a href="mailto:luis.villanueva@greencities.ph" class="email">luis.villanueva@greencities.ph</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="section-header">
+                <h2>Send Us a Message</h2>
+                <p>Have questions or want to partner with us? Fill out the form below.</p>
+            </div>
+            <div class="contact-container">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Juan Dela Cruz">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="juan@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can we collaborate?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-family: inherit; font-size: 1.125rem;">Submit Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-space footer-logo">
+                    <img src="images/GreenCitiesLogo.png" alt="GreenCities Logo" class="logo">
+                    <span class="logo-text">GreenCities</span>
+                </div>
+                <p>Promoting a sustainable and eco-friendly future, one city at a time.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="features.html">Features</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenCities. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

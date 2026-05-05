@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GreenCities - Community Success Stories.">
+    <title>GreenCities | Success Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .full-story-section {
+            padding: 4rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .full-story-section:last-child {
+            border-bottom: none;
+        }
+
+        .full-story-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .story-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--primary-dark);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="glass-header">
+        <div class="header-container">
+            <div class="logo-space">
+                <img src="images/GreenCitiesLogo.png" alt="GreenCities Logo" class="logo">
+                <span class="logo-text">GreenCities</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html" class="btn-primary">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background: linear-gradient(135deg, var(--secondary) 0%, #3498db 100%);">
+            <h1>Success Stories</h1>
+            <p>Read inspiring stories from individuals and communities who have transformed their spaces.</p>
+        </section>
+
+        <section class="content-section" style="padding-bottom: 2rem;">
+            <div class="story-grid">
+                <!-- Story Card 1 -->
+                <a href="#story-1" class="story-card">
+                    <img src="images/bgc-farm.jpg" alt="BGC Community Farm" class="story-image">
+                    <div class="story-content">
+                        <h3>BGC Community Farm (Taguig)</h3>
+                        <p>How Urban Farmers PH turned a vacant lot in the heart of Bonifacio Global City into a
+                            thriving agricultural hub...</p>
+                        <div class="story-author">
+                            <img src="https://placehold.co/40x40/2ecc71/ffffff?text=L" alt="Louie">
+                            <span>Louie Gutierrez - Urban Farmers PH</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Story Card 2 -->
+                <a href="#story-2" class="story-card">
+                    <img src="images/urban-farmqc.jpg" alt="Joy of Urban Farming" class="story-image">
+                    <div class="story-content">
+                        <h3>The Joy of Urban Farming</h3>
+                        <p>A flagship food security program in Quezon City that has successfully established over 1,000
+                            urban gardens...</p>
+                        <div class="story-author">
+                            <img src="https://placehold.co/40x40/2ecc71/ffffff?text=Q" alt="QC">
+                            <span>Quezon City Government</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Story Card 3 -->
+                <a href="#story-3" class="story-card">
+                    <img src="images/iloilo-esplanade.jpg" alt="Iloilo River Esplanade" class="story-image">
+                    <div class="story-content">
+                        <h3>Iloilo River Esplanade</h3>
+                        <p>The award-winning ecological rehabilitation that transformed a polluted river into a stunning
+                            9-kilometer linear park...</p>
+                        <div class="story-author">
+                            <img src="https://placehold.co/40x40/2ecc71/ffffff?text=I" alt="Iloilo">
+                            <span>Iloilo City Government</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Detailed Stories -->
+        <section id="story-1" class="full-story-section">
+            <div class="story-meta">
+                <span>📍 BGC, Taguig City</span>
+                <span>👤 Louie Gutierrez / Urban Farmers PH</span>
+            </div>
+            <h2>The BGC Community Farm</h2>
+            <img src="images/bgc-farm.jpg" alt="BGC Community Farm" class="full-story-img">
+            <p>What do you do with an empty, unused gravel lot in the middle of one of the Philippines' most expensive
+                business districts? For Louie Gutierrez and the team at Urban Farmers PH, the answer was simple: build a
+                farm.</p><br>
+            <p>Launched during the height of the pandemic, the BGC Community Farm transformed a vacant lot at 5th Avenue
+                corner 34th Street into a sprawling, lush agricultural oasis. Instead of concrete, the space is now
+                filled with raised beds growing lettuce, tomatoes, and native herbs. The farm operates entirely
+                organically, utilizing modern urban techniques like vertical farming and hydroponics without the use of
+                chemical pesticides.</p><br>
+            <p>Today, it serves as a crucial green hub where both expats and locals can volunteer. In 2025, it was
+                officially designated as a Certified Learning Site for Agriculture (LSA) by the Agricultural Training
+                Institute, proving that food security and agriculture can thrive even in the densest urban jungles.</p>
+            <br>
+        </section>
+
+        <section id="story-2" class="full-story-section">
+            <div class="story-meta">
+                <span>📍 Quezon City</span>
+                <span>👤 QC Local Government</span>
+            </div>
+            <h2>The Joy of Urban Farming</h2>
+            <img src="images/urban-farmqc.jpg" alt="Joy of Urban Farming" class="full-story-img">
+            <p>When Quezon City launched the "Joy of Urban Farming" program in 2010, it started simply as a small
+                demonstration farm at the Quezon Memorial Circle. The goal was to teach residents how to grow their own
+                food to combat urban poverty and food insecurity.</p><br>
+            <p>Over the years, the initiative exploded in scale. By providing training, seeds, and starter kits to
+                residents, the program empowered citizens to convert idle spaces, rooftops, and backyards into
+                productive green patches. They utilized highly accessible methods like container gardening and upcycling
+                plastic bottles into vertical planters.</p><br>
+            <p>Today, the program proudly boasts over 1,000 thriving urban farms spread across the city's barangays,
+                public schools, and daycares. It stands as one of the most successful, wide-scale LGU-led food security
+                and urban greening programs in the Philippines.</p><br>
+        </section>
+
+        <section id="story-3" class="full-story-section">
+            <div class="story-meta">
+                <span>📍 Iloilo City</span>
+                <span>👤 Iloilo City Government & Arch. Paulo Alcazaren</span>
+            </div>
+            <h2>Iloilo River Esplanade</h2>
+            <img src="images/iloilo-esplanade.jpg" alt="Iloilo River Esplanade" class="full-story-img">
+            <p>For decades, the Iloilo River suffered from severe pollution, clogged with garbage, informal settlements,
+                and toxic runoff. The city faced a critical choice: let the waterway die, or embark on a massive
+                ecological rehabilitation.</p><br>
+            <p>They chose to fight for the river. Led by the local government and designed by renowned architect Paulo
+                Alcazaren, the project involved a massive clean-up, the relocation of settlers to safer housing, and the
+                planting of thousands of mangroves to naturally filter the water and prevent erosion. Instead of
+                building a car-centric road along the riverbank, they built a pedestrian-only linear park.</p><br>
+            <p>The result is the Iloilo River Esplanade, a stunning, multi-awarded 9-kilometer green corridor that has
+                brought biodiversity back to the city. It is now celebrated globally as the gold standard for urban
+                river rehabilitation and sustainable public space in the Philippines.</p><br>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-space footer-logo">
+                    <img src="images/GreenCitiesLogo.png" alt="GreenCities Logo" class="logo">
+                    <span class="logo-text">GreenCities</span>
+                </div>
+                <p>Promoting a sustainable and eco-friendly future, one city at a time.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="features.html">Features</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenCities. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
